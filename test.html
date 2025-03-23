@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input[type="text"] {
+            /* Tente algum destes caminhos: */
+            background-color: black;
+            background-image: url('./img/search.png'); /* Se a pasta img estiver no mesmo diretório do HTML */
+            /* ou */
+            /* background-image: url('../img/search.png'); */ /* Se a pasta img estiver um nível acima */
+            /* ou */
+            /* background-image: url('/img/search.png'); */ /* Caminho absoluto a partir da raiz do site */
+            
+            background-size: 20px; /* Ajuste para um tamanho visível */
+            background-position: 10px center;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            border: 1px solid #ccc; /* Adiciona uma borda para visualizar melhor o campo */
+            height: 36px;
+            box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+        }
+        input[type="text"]:focus {
+            border: 1px solid #4285f4; /* Borda azul ao clicar */
+            box-shadow: 0 0 5px rgba(66, 133, 244, 0.5); /* Sombra suave */
+            background-color: #f8f8f8; /* Muda levemente a cor de fundo */
+            /* Opcionalmente mudar a imagem de fundo */
+            background-image: url('img/search-active.png');
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Pesquisar...">
+    
+    <!-- Para testar se a imagem existe e está acessível, adicione: -->
+    <p>Teste de imagem: <img src="img/search.png" width="20" height="20" alt="Ícone de pesquisa"></p>
+</body>
+</html>
